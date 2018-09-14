@@ -30,7 +30,6 @@ Developers can obtain their API Key from their `settings page`_.
 
 ``curl -H "Authorization: Bearer <api_key>"``
 
-
 .. toctree::
     :maxdepth: 2
     :caption: Endpoints:
@@ -48,3 +47,10 @@ Developers can obtain their API Key from their `settings page`_.
     models/transcript
     models/account
     models/webhooks
+
+Errors:
+*************
+
+.. _RFC7807: https://tools.ietf.org/html/rfc7807
+
+All errors returned in endpoints follow standard `RFC7807`_ spec
