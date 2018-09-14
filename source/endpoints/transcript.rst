@@ -5,7 +5,7 @@ Transcript
 ``GET /jobs/{id}/transcript``
 ******************************
 
-Gets an existing transcription job by id
+Gets an :ref:`transcript <transcript-model>` by :ref:`job <job-model>` id
 
 Note: all GET transcript requests must include an ``Accept`` header that specifies the desired output format. 
 
@@ -28,7 +28,7 @@ id ``(required)``      Gets an existing transcription by job id
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    Revspeech API Transcript
+200                    :ref:`Revspeech API Transcript <transcript-model>`
 
                        ``Example Value``
 

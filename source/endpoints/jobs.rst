@@ -1,3 +1,5 @@
+.. _jobs-endpoint:
+
 *************
 Jobs
 *************
@@ -5,7 +7,7 @@ Jobs
 ``GET /jobs/{id}``
 *******************
 
-Gets an existing transcription job by id
+Gets an existing transcription :ref:`job <job-model>` by id
 
 **CURL Examples**
 
@@ -18,7 +20,7 @@ Gets an existing transcription job by id
 ====================== ===============================================================
 Name                   Description
 ====================== ===============================================================
-id ``(required)``      Gets an existing transcription job by id
+id ``*required``        Gets an existing transcription job by id
 ====================== ===============================================================
 
 **Responses**
@@ -26,7 +28,7 @@ id ``(required)``      Gets an existing transcription job by id
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    Revspeech API Job
+200                    :ref:`Revspeech API Job <job-model>`
 
                        ``Example Value``
 
@@ -72,7 +74,7 @@ Submits a transcription job
 ====================== ===============================================================
 Content-Type           Example
 ====================== ===============================================================
-application/json       Revspeech API Options
+application/json       Submitting via :ref:`Revspeech API Options <options-model>` with a ``media_url``
 
                        ``Example Value``
 
@@ -84,15 +86,15 @@ application/json       Revspeech API Options
                             "callback_url": "https://www.example.com/callback"
                         }     
 ---------------------- ---------------------------------------------------------------
-multipart/form         ``Example Value``
+multipart/form         Uploading Direct Media File
 
-                       .. code:: javascript
+                       ``Example Value``
 
-                         
-                         Key      Value
-                         -------  --------------------------
-                         media    any media file with audio
-                         options  options model (either as a string or json file)
+                       **Key**: *Value*
+
+                       **media**: *any media file with audio*
+
+                       **options**: :ref:`options model <options-model>`
 ====================== ===============================================================
 
 **Responses**
@@ -100,7 +102,7 @@ multipart/form         ``Example Value``
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    Revspeech API Job
+200                    :ref:`Revspeech API Job <job-model>`
 
                        ``Example Value``
 
@@ -114,7 +116,7 @@ Code                   Description
 ---------------------- ---------------------------------------------------------------
 400                    Bad Request
 
-                       ``Example Value``
+                       ``Example Values``
 
                        .. code:: javascript
 
@@ -122,11 +124,21 @@ Code                   Description
                           "parameter": {
                              "<invalid_parameter>": [
                                  "The <invalid_parameter> field is required"
-                             ],
-                             "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
-                             "title": "Your request parameters didn't validate"
-                           }
+                              ],
+                          },
+                          "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
+                          "title": "Your request parameters didn't validate"
                         }     
+
+                        {
+                          "parameter": {
+                             "media_url": [
+                                 "The media_url field is required"
+                              ],
+                          },
+                          "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
+                          "title": "Your request parameters didn't validate"
+                        }   
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -138,7 +150,7 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }    
 ---------------------- ---------------------------------------------------------------
-403                    InsufficientCredits
+403                    Insufficient Credits
 
                        ``Example Value``
 

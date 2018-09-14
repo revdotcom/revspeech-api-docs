@@ -1,3 +1,5 @@
+.. _transcript-model:
+
 *************
 Transcript
 *************
@@ -23,7 +25,7 @@ elements               array            array of transcript elements
 ====================== ================ ==============================================================================================
 Name                   Type             Description
 ====================== ================ ==============================================================================================
-type                   string           type of transcript element. "text", "punct", or "unknown"
+type                   string           type of transcript element. ``"text"``, ``"punct"``, or ``"unknown"``
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 value                  string           value of the transcript element
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
@@ -31,7 +33,7 @@ ts                     double           the timestamp of the beginning of the el
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 ts_end                 double           the timestamp of the end of the element in fractional seconds relative to the beginning of the audio
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-confidence             double           confidence score of the provided value. ranges from 0.00 to 1.00
+confidence             double           confidence score of the provided value. ranges from ``0.00`` to ``1.00``
 ====================== ================ ==============================================================================================
 
 ``Examples``

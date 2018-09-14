@@ -1,3 +1,5 @@
+.. _options-model:
+
 *************
 Options
 *************
@@ -14,7 +16,7 @@ media_url              string           **direct download** media url. ignored i
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 metadata               string           **optional** metadata to associate with the job. 256 maximum char limit
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-callback_url           string           **optional** callback url to invoke on job completion
+callback_url           string           **optional** callback url to invoke on job completion as a :ref:`webhook <webhooks-model>`
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 language_model         n/a              *CURRENTLY UNSUPPORTED* language model type to use in procressing
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------

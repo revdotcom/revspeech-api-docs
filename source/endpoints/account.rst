@@ -5,7 +5,7 @@ Account
 ``GET /account``
 ******************************
 
-Gets the developer's account information
+Gets the developer's :ref:`account <account-model>` information
 
 **CURL Examples**
 
@@ -18,7 +18,7 @@ Gets the developer's account information
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    Revspeech API Account
+200                    :ref:`Revspeech API Account <account-model>`
 
                        ``Example Value``
 

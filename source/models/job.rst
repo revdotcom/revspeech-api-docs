@@ -1,3 +1,5 @@
+.. _job-model:
+
 *************
 Job
 *************
@@ -14,19 +16,19 @@ Name                   Type             Description
 ====================== ================ ==============================================================================================
 id                     string           id of the job 
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-status                 string           current status of the job. 'in_progress', 'transcribed', or 'failed'
+status                 string           current status of the job. ``"in_progress"``, ``"transcribed"``, or ``"failed"``
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 created_on             string(date)     the date and time the transcription job was created in ISO-8601 UTC form
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 metadata               string           metadata that was provided during job submission. 256 maximum char limit
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-callback_url           string           callback url to invoke on job completion
+callback_url           string           :ref:`webhook <webhooks-model>` invoked on job completion
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 duration_seconds       double           duration of the file in seconds, null when not available
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 media_url              string           media url provided by the job submission
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-failure                string           failure reason. 'unspecified', 'download_failure', 'invalid_media', 'insufficient_balance'
+failure                string           failure reason. ``"unspecified"``, ``"download_failure"``, ``"invalid_media"``, ``"insufficient_balance"``
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 failure_detail         string           human-readable reason why the job failed
 ====================== ================ ==============================================================================================
