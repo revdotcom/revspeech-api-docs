@@ -22,6 +22,8 @@ created_on             string(date)     the date and time the transcription job 
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 metadata               string           metadata that was provided during job submission. 256 maximum char limit
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
+name                   string           name of the file provided is available
+---------------------- ---------------- ----------------------------------------------------------------------------------------------
 callback_url           string           :ref:`webhook <webhooks-model>` invoked on job completion
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 duration_seconds       double           duration of the file in seconds, null when not available

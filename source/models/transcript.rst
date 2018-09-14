@@ -31,7 +31,7 @@ value                  string           value of the transcript element
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 ts                     double           the timestamp of the beginning of the element in fractional seconds relative to the beginning of the audio
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-ts_end                 double           the timestamp of the end of the element in fractional seconds relative to the beginning of the audio
+end_ts                 double           the timestamp of the end of the element in fractional seconds relative to the beginning of the audio
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 confidence             double           confidence score of the provided value. ranges from ``0.00`` to ``1.00``
 ====================== ================ ==============================================================================================
@@ -51,14 +51,14 @@ confidence             double           confidence score of the provided value. 
               "type": "text",
               "value": "Hello",
               "ts": 0.5,
-              "ts_end": 1.5,
+              "end_ts": 1.5,
               "confidence": 1.00
             },
             {
               "type": "text",
               "value": "World",
               "ts": 1.75,
-              "ts_end": 2.85,
+              "end_ts": 2.85,
               "confidence": .80
             },
             {
@@ -74,42 +74,42 @@ confidence             double           confidence score of the provided value. 
               "type": "text",
               "value": "monologues",
               "ts": 3.0,
-              "ts_end": 3.5,
+              "end_ts": 3.5,
               "confidence": 1.00
             },
             {
               "type": "text",
               "value": "are",
               "ts": 3.6,
-              "ts_end": 3.9,
+              "end_ts": 3.9,
               "confidence": 1.00
             },
             {
               "type": "text",
               "value": "a",
               "ts": 4.0,
-              "ts_end": 4.3,
+              "end_ts": 4.3,
               "confidence": 1.00
             },
             {
               "type": "text",
               "value": "block",
               "ts": 4.5,
-              "ts_end": 5.5,
+              "end_ts": 5.5,
               "confidence": 1.00
             },
             {
               "type": "text",
               "value": "of",
               "ts": 5.75,
-              "ts_end": 6.14,
+              "end_ts": 6.14,
               "confidence": 1.00
             },
             {
               "type": "text",
               "value": "text",
               "ts": 6.5,
-              "ts_end": 7.78,
+              "end_ts": 7.78,
               "confidence": 1.00
             },
             {

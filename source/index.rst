@@ -13,7 +13,7 @@ Base Endpoint
 
 The base url for this version of the API is
 
- ``https://api.rev.com/revspeech/v1beta``
+ ``https://api.rev.ai/revspeech/v1beta``
 
 All endpoints described in this documentation are relative to this base url
 

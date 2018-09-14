@@ -45,7 +45,7 @@ Code                   Description
                                   "type": "text",
                                   "value": "Hello",
                                   "ts": 0.5,
-                                  "ts_end": 1.5,
+                                  "end_ts": 1.5,
                                   "confidence": 0.99                                 
                                 },
                                 {
