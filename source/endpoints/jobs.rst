@@ -67,7 +67,7 @@ Submits a transcription job
 
 .. code:: javascript
 
-  curl -X POST "https://api.rev.ai/revspeech/v1beta/jobs" -H "Authorization: Bearer <api_key>" -H "Content-Type: multipart/form-data" -F "media=@media_file.mp3" -F "options={"metadata":"This is a sample submit jobs option for multipart"}"
+  curl -X POST "https://api.rev.ai/revspeech/v1beta/jobs" -H "Authorization: Bearer <api_key>" -H "Content-Type: multipart/form-data" -F "media=@media_file.mp3;type=audio/mp3" -F "options={\"metadata\":\"This is a sample submit jobs option for multipart\"}"
 
 **Request Body (required)**
 
