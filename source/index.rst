@@ -32,6 +32,10 @@ Developers can obtain their API Key from their `settings page`_.
 Getting Started
 **************
 
+Here are examples in python:
+
+https://github.com/amikofalvy/revai-python-example
+
 Use your API Key generated above to make calls to our API. 
 
 To **transcribe an audio** file to Revspeech:
