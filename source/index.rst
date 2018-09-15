@@ -1,4 +1,4 @@
-Revspeech API Documentation
+Welcome to the Revspeech API Documentation
 ===========================
 
 **Go to Rev.ai Home**: https://www.rev.ai
@@ -30,6 +30,11 @@ Developers can obtain their API Key from their `settings page`_.
 
 ``curl -H "Authorization: Bearer <api_key>"``
 
+.. toctree::
+    :maxdepth: 1
+    :caption: Getting Started:
+    Getting Started
+    
 .. toctree::
     :maxdepth: 2
     :caption: Endpoints:
