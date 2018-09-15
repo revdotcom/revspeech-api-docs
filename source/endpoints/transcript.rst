@@ -13,7 +13,7 @@ Note: all GET transcript requests must include an ``Accept`` header that specifi
 
 .. code:: javascript
 
-  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs/{id}" -H "Authorization: Bearer <api_key>"
+  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs/{id}/transcript" -H "Authorization: Bearer <api_key>" -H "Accept: application/vnd.rev.transcript.v1.0+json"
 
 **Parameters**
 
