@@ -56,7 +56,7 @@ Alternatively you can get plain text by running:
 
 .. code:: javascript
 
-  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs/{id}/transcript" -H "Authorization: Bearer <api_key>" -H "Accept: plain/text"
+  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs/{id}/transcript" -H "Authorization: Bearer <api_key>" -H "Accept: text/plain"
 
 If you have any further questions, contact us at support@rev.ai
     
