@@ -1,9 +1,9 @@
-Welcome to the Revspeech API Documentation
+Welcome to the RevSpeech API Documentation
 ===========================
 
 **Go to Rev.ai Home**: https://www.rev.ai
 
-This Revspeech API aims to deliver quality speech-text recognition via an API. All public methods and 
+This RevSpeech API aims to deliver quality speech-text recognition via an API. All public methods and 
 objects are documented here for developer reference.
 
 *This documentation is a work in progress and subject to change*
@@ -38,7 +38,7 @@ https://github.com/amikofalvy/revai-python-example
 
 Use your API Key generated above to make calls to our API. 
 
-To **transcribe an audio** file to Revspeech:
+To **transcribe an audio** file to RevSpeech:
 
 .. code:: javascript
 
@@ -50,7 +50,7 @@ You’ll receive a response like this:
 
   {"id":"2028247","created_on":"2018-09-15T05:14:38.13","name":"sample.mp3","metadata":"This is a sample submit jobs option for multipart","status":"in_progress"}
 
-This id (in this case 2028247) will allow you to retrieve your transcript. To **retrieve your transcript** from Revspeech run:
+This id (in this case 2028247) will allow you to retrieve your transcript. To **retrieve your transcript** from RevSpeech run:
 
 .. code:: javascript
 

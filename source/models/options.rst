@@ -4,7 +4,7 @@
 Options
 *************
 
-Revspeech API Job Options Object Model
+RevSpeech API Job Options Object Model
 
 ``Properties``
 ***************
