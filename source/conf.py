@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = u'Revspeech API Documentation'
+project = u'RevSpeech API Documentation'
 copyright = u'2018, Rev.ai'
 author = u'Rev.ai'
 
@@ -129,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'RevspeechAPIDocumentation.tex', u'Revspeech API Documentation Documentation',
+    (master_doc, 'RevspeechAPIDocumentation.tex', u'RevSpeech API Documentation Documentation',
      u'Rev.ai', 'manual'),
 ]
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'revspeechapidocumentation', u'Revspeech API Documentation Documentation',
+    (master_doc, 'revspeechapidocumentation', u'RevSpeech API Documentation Documentation',
      [author], 1)
 ]
 
@@ -150,7 +150,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RevspeechAPIDocumentation', u'Revspeech API Documentation Documentation',
+    (master_doc, 'RevspeechAPIDocumentation', u'RevSpeech API Documentation Documentation',
      author, 'RevspeechAPIDocumentation', 'One line description of project.',
      'Miscellaneous'),
 ]

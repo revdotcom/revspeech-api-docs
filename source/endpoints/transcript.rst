@@ -28,7 +28,7 @@ id ``(required)``      Gets an existing transcription by job id
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    :ref:`Revspeech API Transcript <transcript-model>`
+200                    :ref:`RevSpeech API Transcript <transcript-model>`
 
                        ``Example Value``
 

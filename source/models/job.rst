@@ -4,7 +4,7 @@
 Job
 *************
 
-Revspeech API Job Object Model
+RevSpeech API Job Object Model
 
 Note: properties are not displayed in the returned object if they are ``null``
 

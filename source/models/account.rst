@@ -4,7 +4,7 @@
 Account
 *************
 
-Revspeech API Account Model
+RevSpeech API Account Model
 
 ``Properties``
 ***************
@@ -14,7 +14,7 @@ Name                   Type             Description
 ====================== ================ ==============================================================================================
 email                  string           email of developer account
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-balance_seconds        integer          amount of Revspeech API credits remaining in seconds
+balance_seconds        integer          amount of RevSpeech API credits remaining in seconds
 ====================== ================ ==============================================================================================
 
 ``Examples``
