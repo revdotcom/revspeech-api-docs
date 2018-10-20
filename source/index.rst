@@ -34,6 +34,7 @@ Check out our Python SDK here:
 https://github.com/JDongian/rev_ai
 
 You can install it using 
+
 .. code:: javascript
 
 pip install rev_ai
