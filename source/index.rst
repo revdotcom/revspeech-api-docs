@@ -28,13 +28,17 @@ All API requests must be authorized with an ``"Authorization: Bearer"`` header
 
 Developers can obtain their API Key from their `settings page`_.
 
+Python SDK
+**************
+Check out our Python SDK here:
+https://github.com/JDongian/rev_ai
+
+You can install it using 
+.. code:: javascript
+pip install rev_ai
 
 Getting Started
 **************
-
-Here are examples in python:
-
-https://github.com/amikofalvy/revai-python-example
 
 Use your API Key generated above to make calls to our API. 
 
