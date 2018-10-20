@@ -37,7 +37,8 @@ You can install it using
 
 .. code:: javascript
 
-pip install rev_ai
+  pip install rev_ai
+
 
 Getting Started
 **************
