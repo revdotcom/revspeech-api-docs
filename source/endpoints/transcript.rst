@@ -65,23 +65,6 @@ Code                   Description
 
                         `Speaker 1:    00:43    It is in the format of <Speaker> <Timestamp> <Text>`
 ---------------------- ---------------------------------------------------------------
-400                    Bad Request
-
-                       ``Example Value``
-
-                       .. code:: javascript
-
-                        {
-                          "allowed_values": [
-                            "text/plain",
-                            "application/vnd.rev.transcript.v1.0+json"
-                          ],
-                          "current_value": "*/*",
-                          "type": "https://www.rev.ai/api/speech/v1/errors/unsupported-transcript-format",
-                          "title": "Transcript format is not supported",
-                          "detail": "Unsupported value */*"
-                        }  
----------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
                        ``Example Value``
@@ -93,6 +76,22 @@ Code                   Description
                         }    
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
+---------------------- ---------------------------------------------------------------
+406                    Not Acceptable
+
+                       ``Example Value``
+
+                       .. code:: javascript
+
+                        {
+                          "allowed_values": [
+                            "text/plain",
+                            "application/vnd.rev.transcript.v1.0+json"
+                          ],
+                          "type": "https://www.rev.ai/api/speech/v1/errors/unsupported-transcript-format",
+                          "title": "Transcript format is not supported",
+                          "detail": "Unsupported value */*"
+                        }  
 ---------------------- ---------------------------------------------------------------
 409                    Incorrect Transcript State
 
