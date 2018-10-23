@@ -54,6 +54,86 @@ Code                   Description
 ====================== ===============================================================
 
 
+``GET /jobs``
+*******************
+
+Gets a list of transcription :ref:`jobs <job-model>` within the past week with the latest first
+
+**CURL Examples**
+
+Getting list of jobs with a limit of 10 jobs.
+
+.. code:: javascript
+
+  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs?limit=10" -H "Authorization: Bearer <api_key>"
+
+Getting list of jobs starting after :ref:`job <job-model>` with id 111111.
+
+.. code:: javascript
+
+  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs?starting_after=111111" -H "Authorization: Bearer <api_key>"
+
+
+**Parameters**
+
+============================ ===============================================================
+Name                         Description
+============================ ===============================================================
+limit ``optional``           Limits the amount of jobs received, max limit is 1000
+---------------------------- ---------------------------------------------------------------
+starting_after ``optional``  Gets list of jobs starting after job id
+============================ ===============================================================
+
+**Responses**
+
+====================== ===============================================================
+Code                   Description
+====================== ===============================================================
+200                    List of :ref:`RevSpeech API Job <job-model>`
+
+                       ``Example Value``
+
+                       .. code:: javascript
+
+                        [{
+                          "id": "111111",
+                          "status": "transcribed",
+                          "created_on": "2018-05-08T23:23:22.29Z"
+                        },
+                        {
+                          "id": "222222",
+                          "status": "in_progress",
+                          "created_on": "2018-05-05T23:23:22.29Z"
+                        }]         
+---------------------- ---------------------------------------------------------------
+400                    Bad Request
+
+                       ``Example Value``
+
+                       .. code:: javascript
+
+                        {
+                          "parameter": {
+                             "limit": [
+                                 "The max value for limit is 1000"
+                              ],
+                          },
+                          "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
+                          "title": "Your request parameters didn't validate"
+                        }  
+---------------------- ---------------------------------------------------------------
+401                    Request Unauthorized
+
+                       ``Example Value``
+
+                       .. code:: javascript
+
+                        {
+                          "title": "Authorization has been denied for this request"
+                        }
+====================== ===============================================================
+
+
 ``POST /jobs``
 *****************
 
