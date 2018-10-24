@@ -18,7 +18,9 @@ metadata               string           **optional** metadata to associate with 
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 callback_url           string           **optional** callback url to invoke on job completion as a :ref:`webhook <webhooks-model>`
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-language_model         n/a              *CURRENTLY UNSUPPORTED* language model type to use in procressing
+skip_diarization       boolean           **optional** If true then speaker diarization will be skipped, otherwise speech engine will perform speaker diarization. If value is not provided then the value defaults to false.
+---------------------- ---------------- ----------------------------------------------------------------------------------------------
+language_model         n/a              *CURRENTLY UNSUPPORTED* language model type to use in processing
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 recognition_context    n/a              *CURRENTLY UNSUPPORTED* text to be used to give context to the recognition
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
@@ -38,11 +40,13 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
     {
       "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3",
       "metadata": "sample metadata",
-      "callback_url": "https://www.example.com/callback"
+      "callback_url": "https://www.example.com/callback",
+      "skip_diarization": "false"
     }       
     
     // From Local File
     {
       "metadata": "sample metadata",
-      "callback_url": "https://www.example.com/callback"
+      "callback_url": "https://www.example.com/callback",
+      "skip_diarization": "false"
     }    

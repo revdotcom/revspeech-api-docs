@@ -8,6 +8,8 @@ RevSpeech API Transcript Model
 
 Note: properties are not displayed in the returned object if they are ``null``
 
+Jobs with `skip_diarization` set to true will only show a single speaker for the entire duration of the transcript.
+
 ``Monologue``
 ***************
 
@@ -38,6 +40,8 @@ confidence             double           confidence score of the provided value. 
 
 ``Examples``
 *************
+
+When a job is submitted with option `skip_diarization` set to false or is not specified, the transcript will have the following format:
 
 .. code:: javascript
 
@@ -116,6 +120,85 @@ confidence             double           confidence score of the provided value. 
               "type": "punct",
               "value": ".",
             },
+          ]
+        }
+      ]
+    }  
+
+When a job is submitted with option `skip_diarization` is set to `true`, the transcript will have the following format:
+
+.. code:: javascript
+
+    // Transcript Object
+    {
+      "monologues": [
+        {
+          "speaker": 1,
+          "elements": [
+            {
+              "type": "text",
+              "value": "Hello",
+              "ts": 0.5,
+              "end_ts": 1.5,
+              "confidence": 1.00
+            },
+            {
+              "type": "text",
+              "value": "World",
+              "ts": 1.75,
+              "end_ts": 2.85,
+              "confidence": .80
+            },
+            {
+              "type": "punct",
+              "value": "."
+            },
+            {
+              "type": "text",
+              "value": "Monologues",
+              "ts": 3.0,
+              "end_ts": 3.5,
+              "confidence": 1.00
+            },
+            {
+              "type": "text",
+              "value": "are",
+              "ts": 3.6,
+              "end_ts": 3.9,
+              "confidence": 1.00
+            },
+            {
+              "type": "text",
+              "value": "a",
+              "ts": 4.0,
+              "end_ts": 4.3,
+              "confidence": 1.00
+            },
+            {
+              "type": "text",
+              "value": "block",
+              "ts": 4.5,
+              "end_ts": 5.5,
+              "confidence": 1.00
+            },
+            {
+              "type": "text",
+              "value": "of",
+              "ts": 5.75,
+              "end_ts": 6.14,
+              "confidence": 1.00
+            },
+            {
+              "type": "text",
+              "value": "text",
+              "ts": 6.5,
+              "end_ts": 7.78,
+              "confidence": 1.00
+            },
+            {
+              "type": "punct",
+              "value": ".",
+            }
           ]
         }
       ]
