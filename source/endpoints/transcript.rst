@@ -57,23 +57,25 @@ Code                   Description
                           ]
                         }       
 
-                        The json format of the transcript for a job with `skip_diarization` set to true will only show a single speaker.
 ---------------------- ---------------------------------------------------------------
  200                    ``Example Value``
 
                         **Accept: text/plain**
 
-                        When the submitted job has `skip_diarization` either set to `false` or not set, the transcript will appear as follows:
-                        `Speaker 0    00:01 What is your name?`
-                        `Speaker 1    00:03 Sir Lancelot of Camelot!`
-                        `Speaker 0    00:05 What is your quest?`
-                        `Speaker 1    00:08 To seek the Holy Grail!`
-                        `Speaker 0    00:11 What is your favorite colour?`
-                        `Speaker 1    00:14 Red! I mean blue!`
+                        | When the submitted job has `skip_diarization` either set to `false` or not set, 
+                        | the transcript will appear as follows:
+                        
+                        | `Speaker 0    00:01     What is your name?`
+                        | `Speaker 1    00:03     Sir Lancelot of Camelot!`
+                        | `Speaker 0    00:05     What is your quest?`
+                        | `Speaker 1    00:08     To seek the Holy Grail!`
+                        | `Speaker 0    00:11     What is your favorite colour?`
+                        | `Speaker 1    00:14     Red! I mean blue!`
 
-                        When the submitted job has `skip_diarization` set to `true`:
+                        When the submitted job has `skip_diarization` set to `true`, the same audio would appear as:
 
-                        `Speaker 0    00:01 What is your name? Sir Lancelot of Camelot! What is your quest? To seek the Holy Grail! What is your favorite colour? Red! I mean blue!`
+                        | `Speaker 0    00:01     What is your name? Sir Lancelot of Camelot! What is your`
+                        | `quest? To seek the Holy Grail! What is your favorite colour? Red! I mean blue!`
 
 ---------------------- ---------------------------------------------------------------
 400                    Bad Request
