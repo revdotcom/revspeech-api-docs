@@ -18,7 +18,7 @@ metadata               string           **optional** metadata to associate with 
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 callback_url           string           **optional** callback url to invoke on job completion as a :ref:`webhook <webhooks-model>`
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-skip_diarization       boolean           **optional** If true then speaker diarization will be skipped, otherwise speaker diarization will be done. If value is not provided then the value defaults to false.
+skip_diarization       boolean           **optional** If true then speaker diarization will be skipped, otherwise speech engine will perform speaker diarization. If value is not provided then the value defaults to false.
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 language_model         n/a              *CURRENTLY UNSUPPORTED* language model type to use in processing
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
