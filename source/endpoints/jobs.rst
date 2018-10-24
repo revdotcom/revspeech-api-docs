@@ -57,7 +57,9 @@ Code                   Description
 ``GET /jobs``
 *******************
 
-Gets a list of transcription :ref:`jobs <job-model>` within the past week with the latest first
+Gets a list of transcription :ref:`jobs <job-model>` within the past week in reverse chronological order. 
+Returns up to ``limit`` jobs on each call, so to get all jobs, continue calling passing the last job id 
+from previous call into ``starting_after`` until no more jobs are returned.
 
 **CURL Examples**
 
@@ -79,9 +81,9 @@ Getting list of jobs starting after :ref:`job <job-model>` with id 111111.
 ============================ ===============================================================
 Name                         Description
 ============================ ===============================================================
-limit ``optional``           Limits the amount of jobs received, max limit is 1000
+limit ``optional``           Limits the number of jobs returned, default limit is 100, max is 1000
 ---------------------------- ---------------------------------------------------------------
-starting_after ``optional``  Gets list of jobs starting after job id
+starting_after ``optional``  Gets jobs starting after this job id, exclusive - job with id not included
 ============================ ===============================================================
 
 **Responses**
