@@ -57,9 +57,9 @@ Code                   Description
 ``GET /jobs``
 *******************
 
-Gets a list of transcription :ref:`jobs <job-model>` within the past week in reverse chronological order. 
-Returns up to ``limit`` jobs on each call, so to get all jobs, continue calling passing the last job id 
-from previous call into ``starting_after`` until no more jobs are returned.
+Gets a list of transcription :ref:`jobs <job-model>` submitted within the last week in reverse chronological 
+order up to ``limit`` jobs per call. Pagination is supported via passing the last job id from a previous call 
+into ``starting_after``.
 
 **CURL Examples**
 
@@ -98,12 +98,14 @@ Code                   Description
                        .. code:: javascript
 
                         [{
-                          "id": "111111",
+                          "id": "222222",
+                          "created_on": "2018-05-08T23:23:22.29Z",
+                          "media_url": "https://example.com",
                           "status": "transcribed",
-                          "created_on": "2018-05-08T23:23:22.29Z"
+                          "duration_seconds": 40
                         },
                         {
-                          "id": "222222",
+                          "id": "111111",
                           "status": "in_progress",
                           "created_on": "2018-05-05T23:23:22.29Z"
                         }]         
