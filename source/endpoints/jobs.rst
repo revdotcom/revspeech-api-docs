@@ -81,9 +81,9 @@ Getting list of jobs starting after :ref:`job <job-model>` with id 111111.
 ============================ ===============================================================
 Name                         Description
 ============================ ===============================================================
-limit ``optional``           Limits the number of jobs returned, default limit is 100, max is 1000
+limit ``optional``           Limits the number of jobs returned, default is 100, max is 1000
 ---------------------------- ---------------------------------------------------------------
-starting_after ``optional``  Gets jobs starting after this job id, exclusive - job with id not included
+starting_after ``optional``  Gets jobs listed after this job id, exclusive - job with id not included
 ============================ ===============================================================
 
 **Responses**
