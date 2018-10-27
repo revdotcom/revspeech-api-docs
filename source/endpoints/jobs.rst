@@ -54,6 +54,90 @@ Code                   Description
 ====================== ===============================================================
 
 
+``GET /jobs``
+*******************
+
+Gets a list of transcription :ref:`jobs <job-model>` submitted within the last week in reverse chronological 
+order up to ``limit`` jobs per call. Pagination is supported via passing the last job id from a previous call 
+into ``starting_after``.
+
+**CURL Examples**
+
+Getting list of jobs with a limit of 10 jobs.
+
+.. code:: javascript
+
+  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs?limit=10" -H "Authorization: Bearer <api_key>"
+
+Getting list of jobs starting after :ref:`job <job-model>` with id 111111.
+
+.. code:: javascript
+
+  curl -X GET "https://api.rev.ai/revspeech/v1beta/jobs?starting_after=111111" -H "Authorization: Bearer <api_key>"
+
+
+**Parameters**
+
+============================ ===============================================================
+Name                         Description
+============================ ===============================================================
+limit ``optional``           Limits the number of jobs returned, default is 100, max is 1000
+---------------------------- ---------------------------------------------------------------
+starting_after ``optional``  Gets jobs listed after this job id, exclusive - job with id not included
+============================ ===============================================================
+
+**Responses**
+
+====================== ===============================================================
+Code                   Description
+====================== ===============================================================
+200                    List of :ref:`RevSpeech API Job <job-model>`
+
+                       ``Example Value``
+
+                       .. code:: javascript
+
+                        [{
+                          "id": "222222",
+                          "created_on": "2018-05-08T23:23:22.29Z",
+                          "media_url": "https://example.com",
+                          "status": "transcribed",
+                          "duration_seconds": 40
+                        },
+                        {
+                          "id": "111111",
+                          "status": "in_progress",
+                          "created_on": "2018-05-05T23:23:22.29Z"
+                        }]         
+---------------------- ---------------------------------------------------------------
+400                    Bad Request
+
+                       ``Example Value``
+
+                       .. code:: javascript
+
+                        {
+                          "parameter": {
+                             "limit": [
+                                 "The max value for limit is 1000"
+                              ],
+                          },
+                          "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
+                          "title": "Your request parameters didn't validate"
+                        }  
+---------------------- ---------------------------------------------------------------
+401                    Request Unauthorized
+
+                       ``Example Value``
+
+                       .. code:: javascript
+
+                        {
+                          "title": "Authorization has been denied for this request"
+                        }
+====================== ===============================================================
+
+
 ``POST /jobs``
 *****************
 
