@@ -100,6 +100,7 @@ Code                   Description
                         [{
                           "id": "222222",
                           "created_on": "2018-05-08T23:23:22.29Z",
+                          "completed_on": "2018-05-08T23:24:13.41Z",
                           "media_url": "https://example.com",
                           "status": "transcribed",
                           "duration_seconds": 40
@@ -169,9 +170,9 @@ application/json       Submitting via :ref:`RevSpeech API Options <options-model
                        .. code:: javascript
 
                         {
-                            "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3",
-                            "metadata": "This is a sample submit jobs option",
-                            "callback_url": "https://www.example.com/callback"
+                          "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3",
+                          "metadata": "This is a sample submit jobs option",
+                          "callback_url": "https://www.example.com/callback"
                         }     
 ---------------------- ---------------------------------------------------------------
 multipart/form         Uploading Direct Media File
