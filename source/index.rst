@@ -31,7 +31,7 @@ Developers can obtain their API Key from their `settings page`_.
 Python SDK
 **************
 Check out our Python SDK here:
-https://github.com/JDongian/rev_ai
+https://pypi.org/project/rev-ai/
 
 You can install it using 
 
