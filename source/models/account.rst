@@ -4,7 +4,7 @@
 Account
 *************
 
-RevSpeech API Account Model
+Rev.ai API Account Model
 
 ``Properties``
 ***************

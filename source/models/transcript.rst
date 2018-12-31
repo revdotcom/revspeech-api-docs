@@ -4,7 +4,7 @@
 Transcript
 *************
 
-RevSpeech API Transcript Model
+Rev.ai API Transcript Model
 
 Note: properties are not displayed in the returned object if they are ``null``
 

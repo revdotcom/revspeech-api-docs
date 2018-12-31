@@ -4,7 +4,7 @@
 Options
 *************
 
-RevSpeech API Job Options Object Model
+Rev.ai API Job Options Object Model
 
 ``Properties``
 ***************
