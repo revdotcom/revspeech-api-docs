@@ -28,7 +28,7 @@ id ``(required)``      Gets an existing transcription by job id
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    :ref:`RevSpeech API Transcript <transcript-model>`
+200                    :ref:`Rev.ai API Transcript <transcript-model>`
 
                        ``Example Value``
 
@@ -62,7 +62,7 @@ Code                   Description
 
                         **Accept: text/plain**
 
-                        | When the submitted job has `skip_diarization` either set to `false` or not set, 
+                        | When the submitted job has :ref:`skip_diarization <options-model>` either set to ``false`` or not set, 
                         | the transcript will appear as follows:
                         
                         | `Speaker 0    00:01     What is your name?`
@@ -72,7 +72,7 @@ Code                   Description
                         | `Speaker 0    00:11     What is your favorite colour?`
                         | `Speaker 1    00:14     Red! I mean blue!`
 
-                        When the submitted job has `skip_diarization` set to `true`, the same audio would appear as:
+                        When the submitted job has :ref:`skip_diarization <options-model>` set to ``true``, the same audio would appear as:
 
                         | `Speaker 0    00:01     What is your name? Sir Lancelot of Camelot! What is your`
                         | `quest? To seek the Holy Grail! What is your favorite colour? Red! I mean blue!`
