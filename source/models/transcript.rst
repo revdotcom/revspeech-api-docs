@@ -8,7 +8,7 @@ Rev.ai API Transcript Model
 
 Note: properties are not displayed in the returned object if they are ``null``
 
-Jobs with `skip_diarization` set to true will only show a single speaker for the entire duration of the transcript.
+Jobs with :ref:`skip_diarization <options-model>` set to true will only show a single speaker for the entire duration of the transcript.
 
 ``Monologue``
 ***************
