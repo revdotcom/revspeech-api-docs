@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = u'RevSpeech API Documentation'
+project = u'Rev.ai Documentation'
 copyright = u'2018, Rev.ai'
 author = u'Rev.ai'
 
@@ -102,7 +102,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RevspeechAPIDocumentationdoc'
+htmlhelp_basename = 'RevaiDocumentationdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -129,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'RevspeechAPIDocumentation.tex', u'RevSpeech API Documentation Documentation',
+    (master_doc, 'RevaiDocumentation.tex', u'Rev.ai Documentation',
      u'Rev.ai', 'manual'),
 ]
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'revspeechapidocumentation', u'RevSpeech API Documentation Documentation',
+    (master_doc, 'RevaiDocumentation.tex', u'Rev.ai Documentation',
      [author], 1)
 ]
 
@@ -150,8 +150,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RevspeechAPIDocumentation', u'RevSpeech API Documentation Documentation',
-     author, 'RevspeechAPIDocumentation', 'One line description of project.',
+    (master_doc, 'RevaiDocumentation.tex', u'Rev.ai Documentation',
+     author, 'RevaiDocumentation.tex', u'Rev.ai Documentation',
      'Miscellaneous'),
 ]
 

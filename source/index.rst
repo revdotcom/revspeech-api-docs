@@ -1,9 +1,9 @@
-Welcome to the RevSpeech API Documentation
-===========================
+Welcome to the Rev.ai Documentation
+========================================
 
 **Go to Rev.ai Home**: https://www.rev.ai
 
-This RevSpeech API aims to deliver quality speech-text recognition via an API. All public methods and 
+This Rev.ai aims to deliver quality speech-text recognition via an API. All public methods and 
 objects are documented here for developer reference.
 
 *This documentation is a work in progress and subject to change*
@@ -41,11 +41,11 @@ You can install it using
 
 
 Getting Started
-**************
+****************
 
 Use your API Key generated above to make calls to our API. 
 
-To **transcribe an audio** file to RevSpeech:
+To **transcribe an audio** file to Rev.ai:
 
 .. code:: javascript
 
