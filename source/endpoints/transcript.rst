@@ -28,7 +28,7 @@ id ``(required)``      Gets an existing transcription by job id
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    :ref:`Rev.ai API Transcript <transcript-model>`
+200                    :ref:`Rev.ai Transcript <transcript-model>`
 
                        ``Example Value``
 

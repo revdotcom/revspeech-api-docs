@@ -4,7 +4,7 @@
 Account
 *************
 
-Rev.ai API Account Model
+Rev.ai Account Model
 
 ``Properties``
 ***************
@@ -14,7 +14,7 @@ Name                   Type             Description
 ====================== ================ ==============================================================================================
 email                  string           email of developer account
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
-balance_seconds        integer          amount of Rev.ai API credits remaining in seconds
+balance_seconds        integer          amount of Rev.ai credits remaining in seconds
 ====================== ================ ==============================================================================================
 
 ``Examples``
