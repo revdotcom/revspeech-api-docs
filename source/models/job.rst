@@ -67,7 +67,7 @@ failure_detail         string           human-readable reason why the job failed
     
 **Failed Job**
 
-..code:: javascript
+.. code:: javascript
 
     {
       "id": "111111",

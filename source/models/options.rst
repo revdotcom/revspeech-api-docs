@@ -47,7 +47,7 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
 
 **From Local File**
 
-..code:: javascript
+.. code:: javascript
 
     {
       "metadata": "sample metadata",
