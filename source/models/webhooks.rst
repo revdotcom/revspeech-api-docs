@@ -18,9 +18,10 @@ job                    object           :ref:`Rev.ai API Job <job-model>`
 ``Examples``
 *************
 
+**Transcribed Job**
+
 .. code:: javascript
 
-    // Transcribed Job
     {
       "job": {
         "id": "111111",

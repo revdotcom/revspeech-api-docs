@@ -34,17 +34,21 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
 ``Examples``
 *************
 
+**From Media Url**
+
 .. code:: javascript
 
-    // From Media Url
     {
       "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3",
       "metadata": "sample metadata",
       "callback_url": "https://www.example.com/callback",
       "skip_diarization": "false"
     }       
-    
-    // From Local File
+
+**From Local File**
+
+..code:: javascript
+
     {
       "metadata": "sample metadata",
       "callback_url": "https://www.example.com/callback",

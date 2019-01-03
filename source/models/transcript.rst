@@ -43,9 +43,10 @@ confidence             double           confidence score of the provided value. 
 
 When a job is submitted with option :ref:`skip_diarization <options-model>` set to ``false`` or is not specified, the transcript will have the following format:
 
+**Transcript Object**
+
 .. code:: javascript
 
-    // Transcript Object
     {
       "monologues": [
         {
@@ -127,9 +128,10 @@ When a job is submitted with option :ref:`skip_diarization <options-model>` set 
 
 When a job is submitted with option :ref:`skip_diarization <options-model>` is set to ``true``, the transcript will have the following format:
 
+**Transcript Object**
+
 .. code:: javascript
 
-    // Transcript Object
     {
       "monologues": [
         {
