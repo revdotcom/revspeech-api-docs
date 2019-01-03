@@ -3,7 +3,7 @@ Welcome to the Rev.ai Documentation
 
 **Go to Rev.ai Home**: https://www.rev.ai
 
-This Rev.ai aims to deliver quality speech-text recognition via an API. All public methods and 
+Rev.ai aims to deliver quality speech-text recognition via an API. All public methods and 
 objects are documented here for developer reference.
 
 *This documentation is a work in progress and subject to change*
