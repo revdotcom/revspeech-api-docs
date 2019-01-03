@@ -28,7 +28,7 @@ id ``*required``        Gets an existing transcription job by id
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    :ref:`RevSpeech API Job <job-model>`
+200                    :ref:`Rev.ai API Job <job-model>`
 
                        ``Example Value``
 
@@ -163,7 +163,7 @@ Submitting for local uploads. Must include the audio type.
 ====================== ===============================================================
 Content-Type           Example
 ====================== ===============================================================
-application/json       Submitting via :ref:`RevSpeech API Options <options-model>` with a ``media_url``
+application/json       Submitting via :ref:`Rev.ai API Options <options-model>` with a ``media_url``
 
                        ``Example Value``
 
@@ -191,7 +191,7 @@ multipart/form         Uploading Direct Media File
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    :ref:`RevSpeech API Job <job-model>`
+200                    :ref:`Rev.ai API Job <job-model>`
 
                        ``Example Value``
 
