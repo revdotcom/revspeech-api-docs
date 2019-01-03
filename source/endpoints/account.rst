@@ -39,5 +39,5 @@ Code                   Description
 
                         {
                           "title": "Authorization has been denied for this request"
-                        }    
+                        }  
 ====================== ===============================================================

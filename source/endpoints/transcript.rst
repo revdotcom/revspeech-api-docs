@@ -7,7 +7,7 @@ Transcript
 
 Gets an :ref:`transcript <transcript-model>` by :ref:`job <job-model>` id
 
-Note: all GET transcript requests must include an ``Accept`` header that specifies the desired output format. 
+Note: all GET transcript requests must include an ``Accept`` header that specifies the desired output format. Either plain text or revs special json format
 
 **CURL Examples**
 
