@@ -91,7 +91,7 @@ starting_after ``optional``  Gets jobs listed after this job id, exclusive - job
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    List of :ref:`RevSpeech API Job <job-model>`
+200                    List of :ref:`Rev.ai API Job <job-model>`
 
                        ``Example Value``
 

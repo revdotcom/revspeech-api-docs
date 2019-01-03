@@ -4,11 +4,11 @@
 Transcript
 *************
 
-RevSpeech API Transcript Model
+Rev.ai Transcript Model
 
 Note: properties are not displayed in the returned object if they are ``null``
 
-Jobs with `skip_diarization` set to true will only show a single speaker for the entire duration of the transcript.
+Jobs with :ref:`skip_diarization <options-model>` set to ``true`` will only show a single speaker for the entire duration of the transcript.
 
 ``Monologue``
 ***************
@@ -41,7 +41,7 @@ confidence             double           confidence score of the provided value. 
 ``Examples``
 *************
 
-When a job is submitted with option `skip_diarization` set to false or is not specified, the transcript will have the following format:
+When a job is submitted with option :ref:`skip_diarization <options-model>` set to ``false`` or is not specified, the transcript will have the following format:
 
 .. code:: javascript
 
@@ -125,7 +125,7 @@ When a job is submitted with option `skip_diarization` set to false or is not sp
       ]
     }  
 
-When a job is submitted with option `skip_diarization` is set to `true`, the transcript will have the following format:
+When a job is submitted with option :ref:`skip_diarization <options-model>` is set to ``true``, the transcript will have the following format:
 
 .. code:: javascript
 

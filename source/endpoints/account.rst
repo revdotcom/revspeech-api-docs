@@ -18,7 +18,7 @@ Gets the developer's :ref:`account <account-model>` information
 ====================== ===============================================================
 Code                   Description
 ====================== ===============================================================
-200                    :ref:`RevSpeech API Account <account-model>`
+200                    :ref:`Rev.ai Account <account-model>`
 
                        ``Example Value``
 

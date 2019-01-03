@@ -1,2 +1,2 @@
-# revspeech-api-docs
-Repo for read the docs source for RevSpeech API docs
+# rev.ai-docs
+Repo for read the docs source for Rev.ai docs
