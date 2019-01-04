@@ -41,6 +41,5 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }  
 
-                       This is normally caused by an old or invalid API Token,
-                       try regenerating your token on your account settings page.
+                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_.
 ====================== ===============================================================

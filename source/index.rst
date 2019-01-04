@@ -26,7 +26,7 @@ All API requests must be authorized with an ``"Authorization: Bearer"`` header
 
 .. _settings page: http://www.rev.ai/settings
 
-Developers can obtain their API Key from their `settings page`_.
+Developers can obtain their API Key from their `settings page`_. This API need only be generated once and never expires.
 
 Python SDK
 **************

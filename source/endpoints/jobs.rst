@@ -49,6 +49,8 @@ Code                   Description
                         {
                           "title": "Authorization has been denied for this request"
                         }    
+
+                        Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
 ====================== ===============================================================
@@ -125,7 +127,7 @@ Code                   Description
                           },
                           "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
                           "title": "Your request parameters didn't validate"
-                        }  
+                        } 
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -136,6 +138,8 @@ Code                   Description
                         {
                           "title": "Authorization has been denied for this request"
                         }
+
+                        Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
 ====================== ===============================================================
 
 
@@ -211,23 +215,15 @@ Code                   Description
 
                         {
                           "parameter": {
-                             "<invalid_parameter>": [
-                                 "The <invalid_parameter> field is required"
+                             "<parameter>": [
+                                 "The <parameter> field is required"
                               ],
                           },
                           "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
                           "title": "Your request parameters didn't validate"
-                        }     
+                        }
 
-                        {
-                          "parameter": {
-                             "media_url": [
-                                 "The media_url field is required"
-                              ],
-                          },
-                          "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
-                          "title": "Your request parameters didn't validate"
-                        }   
+                        Ensure all parameters are present and in the correct form (either string, file, or json)
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -237,7 +233,9 @@ Code                   Description
 
                         {
                           "title": "Authorization has been denied for this request"
-                        }    
+                        }  
+
+                        Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 403                    Insufficient Credits
 
