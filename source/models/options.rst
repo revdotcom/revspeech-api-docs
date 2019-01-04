@@ -35,6 +35,7 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
 *************
 
 **From Media Url**
+
 When submitting a job with a link to the media to be transcribed the media_url is included in the options parameter:
 
 .. code:: javascript
@@ -47,6 +48,7 @@ When submitting a job with a link to the media to be transcribed the media_url i
     }       
 
 **From Local File**
+
 Otherwise options will be a separate json parameter of the multipart/form-data request:
 
 .. code:: javascript
