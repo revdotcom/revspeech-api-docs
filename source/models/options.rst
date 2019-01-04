@@ -1,7 +1,7 @@
 .. _options-model:
 
 *************
-Options
+Job Submission Options
 *************
 
 Rev.ai Job Options Object Model
@@ -12,7 +12,7 @@ Rev.ai Job Options Object Model
 ====================== ================ ==============================================================================================
 Name                   Type             Description
 ====================== ================ ==============================================================================================
-media_url              string           **direct download** media url. ignored if submitting job from file
+media_url              string           **direct download** media url. **ignored if** submitting job from file
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 metadata               string           **optional** metadata to associate with the job. 256 maximum char limit
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
@@ -35,6 +35,7 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
 *************
 
 **From Media Url**
+When submitting a job with a link to the media to be transcribed the media_url is included in the options parameter:
 
 .. code:: javascript
 
@@ -46,6 +47,7 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
     }       
 
 **From Local File**
+Otherwise options will be a separate json parameter of the multipart/form-data request:
 
 .. code:: javascript
 
