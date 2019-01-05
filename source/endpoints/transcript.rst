@@ -126,5 +126,5 @@ Code                   Description
                           "detail": "Job is in invalid state to obtain the transcript"
                         }    
 
-                       In case of failure, more details can be found at :ref:`blah <jobs-endpoint>`
+                       In case of failure, more details can be found at :ref:`GET /jobs/{id} <jobs-endpoint>`
 ====================== ===============================================================
