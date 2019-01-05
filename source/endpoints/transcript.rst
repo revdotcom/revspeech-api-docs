@@ -1,3 +1,5 @@
+.. _settings page: http://www.rev.ai/settings
+
 *************
 Transcript
 *************
@@ -88,7 +90,7 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }    
 
-                        Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
 ---------------------- ---------------------------------------------------------------
@@ -124,5 +126,5 @@ Code                   Description
                           "detail": "Job is in invalid state to obtain the transcript"
                         }    
 
-                        In case of failure, more details can be found at :ref: `GET jobs/{id} <jobs_endpoint>` 
+                       In case of failure, more details can be found at :ref:`blah <jobs-endpoint>`
 ====================== ===============================================================

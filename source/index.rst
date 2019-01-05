@@ -41,7 +41,7 @@ You can install it using
 
 .. toctree::
     :maxdepth: 1
-    :caption: Getting Started:
+    :caption: Get Started:
 
     quickstart
 

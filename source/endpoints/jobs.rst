@@ -4,6 +4,8 @@
 Jobs
 *************
 
+.. _settings page: http://www.rev.ai/settings
+
 ``GET /jobs/{id}``
 *******************
 
@@ -50,7 +52,7 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }    
 
-                        Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
 ====================== ===============================================================
@@ -139,7 +141,7 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }
 
-                        Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
 ====================== ===============================================================
 
 
@@ -223,7 +225,7 @@ Code                   Description
                           "title": "Your request parameters didn't validate"
                         }
 
-                        Ensure all parameters are present and in the correct form (either string, file, or json)
+                       Ensure all parameters are present and in the correct form (either string, file, or json)
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -235,7 +237,7 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }  
 
-                        Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 403                    Insufficient Credits
 

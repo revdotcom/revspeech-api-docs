@@ -1,3 +1,5 @@
+.. _settings page: http://www.rev.ai/settings
+
 *************
 Account
 *************

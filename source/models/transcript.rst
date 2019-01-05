@@ -126,7 +126,7 @@ When a job is submitted with option :ref:`skip_diarization <options-model>` set 
       ]
     }  
 
-When a job is submitted with option :ref:`skip_diarization <options-model>` is set to ``true``, the transcript will have the following format:
+When a job is submitted with option :ref:`skip_diarization <options-model>` is set to ``true``, the transcript will have the following format: 
 
 **Transcript Object**
 

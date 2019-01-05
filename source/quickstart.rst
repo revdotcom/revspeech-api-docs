@@ -1,5 +1,5 @@
 **************
-Getting Started
+Quick Start
 **************
 
 Use your API Key generated above to make calls to our API. 
