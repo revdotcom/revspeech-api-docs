@@ -40,7 +40,7 @@ You can install it using
   pip install rev_ai
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Get Started:
 
     quickstart
@@ -55,13 +55,18 @@ You can install it using
 
 .. toctree::
     :maxdepth: 2
+    :caption: Callbacks:
+
+    models/webhooks
+
+.. toctree::
+    :maxdepth: 2
     :caption: Models:
 
     models/job
     models/options
     models/transcript
     models/account
-    models/webhooks
 
 Errors:
 *************

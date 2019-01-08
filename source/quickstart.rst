@@ -2,9 +2,17 @@
 Quick Start
 **************
 
-Use your API Key generated above to make calls to our API. 
+``Get your API Key``
+*********************
 
-To **transcribe an audio** file to Rev.ai:
+.. _settings page: http://www.rev.ai/settings
+
+You can generate your API Key on the `settings page`_ of your account. You need only generate this once, it can be used for all requests from there after.
+
+``Submit a File``
+*********************
+
+To transcribe an audio file to Rev.ai:
 
 .. code:: javascript
 
@@ -16,7 +24,12 @@ You’ll receive a response like this:
 
   {"id":"2028247","created_on":"2018-09-15T05:14:38.13","name":"sample.mp3","metadata":"This is a sample submit jobs option for multipart","status":"in_progress"}
 
-This id (in this case 2028247) will allow you to retrieve your transcript. To **retrieve your transcript** from RevSpeech run:
+This id (in this case 2028247) will allow you to retrieve your transcript. 
+
+``Get Your Transcript``
+***********************
+
+To retrieve your transcript from RevSpeech run:
 
 .. code:: javascript
 
