@@ -13,7 +13,7 @@ Gets the developer's :ref:`account <account-model>` information
 
 .. code:: javascript
 
-  curl -X GET "https://api.rev.ai/revspeech/v1beta/account" -H "Authorization: Bearer <api_key>" 
+  curl -X GET "https://api.rev.ai/revspeech/v1beta/account" -H "Authorization: Bearer <api_key>"
 
 **Responses**
 
@@ -31,7 +31,7 @@ Code                   Description
                         {
                           "email": "jay@rev.ai",
                           "balance_seconds": 1500
-                        }    
+                        }
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -40,8 +40,9 @@ Code                   Description
                        .. code:: javascript
 
                         {
-                          "title": "Authorization has been denied for this request"
-                        }  
+                          "title": "Authorization has been denied for this request",
+                          "status": 401
+                        }
 
                        Caused by an old or invalid API Key, try regenerating your key on your `settings page`_.
 ====================== ===============================================================

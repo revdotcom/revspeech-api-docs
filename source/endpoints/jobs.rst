@@ -40,7 +40,7 @@ Code                   Description
                           "id": "111111",
                           "status": "in_progress",
                           "created_on": "2018-05-05T23:23:22.29Z"
-                        }          
+                        }
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -49,10 +49,11 @@ Code                   Description
                        .. code:: javascript
 
                         {
-                          "title": "Authorization has been denied for this request"
-                        }    
+                          "title": "Authorization has been denied for this request",
+                          "status": 401
+                        }
 
-                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_.
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
 ====================== ===============================================================
@@ -61,8 +62,8 @@ Code                   Description
 ``GET /jobs``
 *******************
 
-Gets a list of transcription :ref:`jobs <job-model>` submitted within the last week in reverse chronological 
-order up to ``limit`` jobs per call. Pagination is supported via passing the last job id from a previous call 
+Gets a list of transcription :ref:`jobs <job-model>` submitted within the last week in reverse chronological
+order up to ``limit`` jobs per call. Pagination is supported via passing the last job id from a previous call
 into ``starting_after``.
 
 **CURL Examples**
@@ -113,7 +114,7 @@ Code                   Description
                           "id": "111111",
                           "status": "in_progress",
                           "created_on": "2018-05-05T23:23:22.29Z"
-                        }]         
+                        }]
 ---------------------- ---------------------------------------------------------------
 400                    Bad Request
 
@@ -128,8 +129,9 @@ Code                   Description
                               ],
                           },
                           "type": "https://www.rev.ai/api/v1/errors/invalid-parameters",
-                          "title": "Your request parameters didn't validate"
-                        } 
+                          "title": "Your request parameters didn't validate",
+                          "status": 400
+                        }
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -138,10 +140,11 @@ Code                   Description
                        .. code:: javascript
 
                         {
-                          "title": "Authorization has been denied for this request"
+                          "title": "Authorization has been denied for this request",
+                          "status": 401
                         }
 
-                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_.
 ====================== ===============================================================
 
 
@@ -179,7 +182,7 @@ application/json       Submitting via :ref:`Rev.ai API Options <options-model>` 
                           "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3",
                           "metadata": "This is a sample submit jobs option",
                           "callback_url": "https://www.example.com/callback"
-                        }     
+                        }
 ---------------------- ---------------------------------------------------------------
 multipart/form         Uploading Direct Media File
 
@@ -207,7 +210,7 @@ Code                   Description
                           "id": "111111",
                           "status": "in_progress",
                           "created_on": "2018-05-05T23:23:22.29Z"
-                        }       
+                        }
 ---------------------- ---------------------------------------------------------------
 400                    Bad Request
 
@@ -235,9 +238,9 @@ Code                   Description
 
                         {
                           "title": "Authorization has been denied for this request"
-                        }  
+                        }
 
-                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_.
 ---------------------- ---------------------------------------------------------------
 403                    Insufficient Credits
 
@@ -250,5 +253,5 @@ Code                   Description
                           "type": "https://www.rev.ai/api/v1/errors/out-of-credit",
                           "detail": "You have only 60 seconds remaining",
                           "current_balance": 60
-                        }    
+                        }
 ====================== ===============================================================

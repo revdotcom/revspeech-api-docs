@@ -48,25 +48,25 @@ Code                   Description
                                   "value": "Hello",
                                   "ts": 0.5,
                                   "end_ts": 1.5,
-                                  "confidence": 0.99                                 
+                                  "confidence": 0.99
                                 },
                                 {
                                   "type": "punct",
                                   "value": "."
                                 }
                               ]
-                            }                           
+                            }
                           ]
-                        }       
+                        }
 
 ---------------------- ---------------------------------------------------------------
  200                    ``Example Value``
 
                         **Accept: text/plain**
 
-                        | When the submitted job has :ref:`skip_diarization <options-model>` either set to ``false`` or not set, 
+                        | When the submitted job has :ref:`skip_diarization <options-model>` either set to ``false`` or not set,
                         | the transcript will appear as follows:
-                        
+
                         | `Speaker 0    00:01     What is your name?`
                         | `Speaker 1    00:03     Sir Lancelot of Camelot!`
                         | `Speaker 0    00:05     What is your quest?`
@@ -87,10 +87,11 @@ Code                   Description
                        .. code:: javascript
 
                         {
-                          "title": "Authorization has been denied for this request"
-                        }    
+                          "title": "Authorization has been denied for this request",
+                          "status": 401
+                        }
 
-                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_.
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
 ---------------------- ---------------------------------------------------------------
@@ -107,8 +108,9 @@ Code                   Description
                           ],
                           "type": "https://www.rev.ai/api/speech/v1/errors/unsupported-transcript-format",
                           "title": "Transcript format is not supported",
+                          "status": 406,
                           "detail": "Unsupported value */*"
-                        }  
+                        }
 ---------------------- ---------------------------------------------------------------
 409                    Incorrect Transcript State
 
@@ -123,8 +125,9 @@ Code                   Description
                           "current_value": "in_progress",
                           "type": "https://www.rev.ai/api/speech/v1/errors/invalid-job-state",
                           "title": "Job is in invalid state",
+                          "status": 409,
                           "detail": "Job is in invalid state to obtain the transcript"
-                        }    
+                        }
 
                        In case of failure, more details can be found at :ref:`GET /jobs/{id} <jobs-endpoint>`
 ====================== ===============================================================
