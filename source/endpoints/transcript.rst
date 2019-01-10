@@ -9,7 +9,7 @@ Transcript
 
 Gets an :ref:`transcript <transcript-model>` by :ref:`job <job-model>` id
 
-Note: all GET transcript requests must include an ``Accept`` header that specifies the desired output format. Either plain text or revs special json format
+Note: all GET transcript requests must include an ``Accept`` header that specifies the desired output format. Either plain text or Rev.ai's special json format
 
 **CURL Examples**
 
@@ -90,7 +90,7 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }    
 
-                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
 ---------------------- ---------------------------------------------------------------

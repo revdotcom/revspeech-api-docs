@@ -24,7 +24,7 @@ You’ll receive a response like this:
 
   {"id":"2028247","created_on":"2018-09-15T05:14:38.13","name":"sample.mp3","metadata":"This is a sample submit jobs option for multipart","status":"in_progress"}
 
-This id (in this case 2028247) will allow you to retrieve your transcript. 
+This `id` (in this case `2028247`) will allow you to retrieve your transcript. 
 
 ``Get Your Transcript``
 ***********************

@@ -141,14 +141,14 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }
 
-                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_. 
 ====================== ===============================================================
 
 
 ``POST /jobs``
 *****************
 
-Submits a transcription job
+Submits a transcription job. Jobs may be submitted in two ways, either by including a public url to download from in the :ref:`Rev.ai API Options <options-model>` or by uploading a local file as part of a multipart/form request.
 
 **CURL Examples**
 
@@ -237,7 +237,7 @@ Code                   Description
                           "title": "Authorization has been denied for this request"
                         }  
 
-                       Caused by an old or invalid API Token, try regenerating your token on your `settings page`_. 
+                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 403                    Insufficient Credits
 
