@@ -1,7 +1,7 @@
 .. _options-model:
 
 *************
-Options
+Job Submission Options
 *************
 
 Rev.ai Job Options Object Model
@@ -12,7 +12,7 @@ Rev.ai Job Options Object Model
 ====================== ================ ==============================================================================================
 Name                   Type             Description
 ====================== ================ ==============================================================================================
-media_url              string           **direct download** media url. ignored if submitting job from file
+media_url              string           **direct download** media url. **ignored if** submitting job from file
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 metadata               string           **optional** metadata to associate with the job. 256 maximum char limit
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
@@ -34,17 +34,21 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
 ``Examples``
 *************
 
+**From Media Url**
+
 .. code:: javascript
 
-    // From Media Url
     {
       "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3",
       "metadata": "sample metadata",
       "callback_url": "https://www.example.com/callback",
       "skip_diarization": "false"
     }       
-    
-    // From Local File
+
+**From Local File**
+
+.. code:: javascript
+
     {
       "metadata": "sample metadata",
       "callback_url": "https://www.example.com/callback",

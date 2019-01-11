@@ -1,3 +1,5 @@
+.. _settings page: http://www.rev.ai/settings
+
 *************
 Transcript
 *************
@@ -7,7 +9,7 @@ Transcript
 
 Gets an :ref:`transcript <transcript-model>` by :ref:`job <job-model>` id
 
-Note: all GET transcript requests must include an ``Accept`` header that specifies the desired output format. 
+Note: all GET transcript requests must include an ``Accept`` header that specifies the desired output format. Either plain text or Rev.ai's special json format
 
 **CURL Examples**
 
@@ -87,6 +89,8 @@ Code                   Description
                         {
                           "title": "Authorization has been denied for this request"
                         }    
+
+                       Caused by an old or invalid API Key, try regenerating your token on your `settings page`_. 
 ---------------------- ---------------------------------------------------------------
 404                    Job Not Found
 ---------------------- ---------------------------------------------------------------
@@ -120,5 +124,7 @@ Code                   Description
                           "type": "https://www.rev.ai/api/speech/v1/errors/invalid-job-state",
                           "title": "Job is in invalid state",
                           "detail": "Job is in invalid state to obtain the transcript"
-                        }                        
+                        }    
+
+                       In case of failure, more details can be found at :ref:`GET /jobs/{id} <jobs-endpoint>`
 ====================== ===============================================================

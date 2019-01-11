@@ -20,9 +20,10 @@ balance_seconds        integer          amount of Rev.ai credits remaining in se
 ``Examples``
 *************
 
+**Account Object**
+
 .. code:: javascript
 
-    // Account Object
     {
       "email": "jay@rev.ai",
       "balance_seconds": 150

@@ -40,17 +40,21 @@ failure_detail         string           human-readable reason why the job failed
 ``Examples``
 *************
 
+**New Job**
+
 .. code:: javascript
 
-    // New Job
     {
       "id": "111111",
       "status": "in_progress",
       "created_on": "2018-05-05T23:23:22.29Z",
       "metadata": "this is sample metadata"
     }       
-    
-    // Transcribed Job
+
+**Transcribed Job**
+
+.. code:: javascript
+
     {
       "id": "111111",
       "status": "transcribed",
@@ -61,7 +65,10 @@ failure_detail         string           human-readable reason why the job failed
       "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3"
     }     
     
-    // Failed Job
+**Failed Job**
+
+.. code:: javascript
+
     {
       "id": "111111",
       "status": "failed",

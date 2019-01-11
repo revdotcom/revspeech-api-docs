@@ -1,3 +1,5 @@
+.. _settings page: http://www.rev.ai/settings
+
 *************
 Account
 *************
@@ -29,7 +31,7 @@ Code                   Description
                         {
                           "email": "jay@rev.ai",
                           "balance_seconds": 1500
-                        }       
+                        }    
 ---------------------- ---------------------------------------------------------------
 401                    Request Unauthorized
 
@@ -39,5 +41,7 @@ Code                   Description
 
                         {
                           "title": "Authorization has been denied for this request"
-                        }    
+                        }  
+
+                       Caused by an old or invalid API Key, try regenerating your key on your `settings page`_.
 ====================== ===============================================================
