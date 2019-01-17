@@ -14,7 +14,7 @@ Note: properties are not displayed in the returned object if they are ``null``
 ====================== ================ ==============================================================================================
 Name                   Type             Description
 ====================== ================ ==============================================================================================
-id                     string           id of the job 
+id                     string           id of the job
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
 status                 string           current status of the job. ``"in_progress"``, ``"transcribed"``, or ``"failed"``
 ---------------------- ---------------- ----------------------------------------------------------------------------------------------
@@ -49,7 +49,7 @@ failure_detail         string           human-readable reason why the job failed
       "status": "in_progress",
       "created_on": "2018-05-05T23:23:22.29Z",
       "metadata": "this is sample metadata"
-    }       
+    }
 
 **Transcribed Job**
 
@@ -63,8 +63,8 @@ failure_detail         string           human-readable reason why the job failed
       "callback_url": "https://www.example.com/callback",
       "duration_seconds": 356.24,
       "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3"
-    }     
-    
+    }
+
 **Failed Job**
 
 .. code:: javascript
@@ -76,4 +76,4 @@ failure_detail         string           human-readable reason why the job failed
       "completed_on": "2018-05-05T23:23:24.11Z",
       "failure": "download_failure",
       "failure_detail": "Failed to download media file. Please check your url and file type"
-    }       
+    }

@@ -31,4 +31,4 @@ job                    object           :ref:`Rev.ai API Job <job-model>`
         "duration_seconds": 356.24,
         "media_url": "https://support.rev.com/hc/en-us/article_attachments/200043975/FTC_Sample_1_-_Single.mp3"
       }
-    }   
+    }

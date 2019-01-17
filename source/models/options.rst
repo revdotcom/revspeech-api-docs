@@ -43,7 +43,7 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
       "metadata": "sample metadata",
       "callback_url": "https://www.example.com/callback",
       "skip_diarization": "false"
-    }       
+    }
 
 **From Local File**
 
@@ -53,4 +53,4 @@ desired_processing     n/a              *CURRENTLY UNSUPPORTED* list of speech-r
       "metadata": "sample metadata",
       "callback_url": "https://www.example.com/callback",
       "skip_diarization": "false"
-    }    
+    }
